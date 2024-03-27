@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "binary_trees.h"
+#include <stdlib.h>
 
 /**
  * binary_tree_node - A function that creates a binary tree node
@@ -15,7 +16,7 @@ new_node = malloc(sizeof(binary_tree_t));
 	{
 		return (NULL);
 	}
-	new_node->value = value;
+	new_node->n = value;
 	new_node->parent = parent;
 	new_node->left = NULL;
 	new_node->right = NULL;
